@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Application</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script defer src="bootstrap.js"></script>
+    <script defer src="jquery-3.5.1.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation bar Of Home page -->
+<!-- 
+    location
+    long
+    lat
+    ajax({
+        url= p=${long},${lat}
+        res
+        localStorage('cityName',res.location.)_
+    })
+
+ -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-dark sticky-top ">
+            <a href="home.html" class="navbar-brand">
+                <img src="logo.png" alt="logo" class="rounded" >
+            </a>
+            
+            <div class=" container justify-content-center ">
+                <ul class="navbar-nav">
+                        <!-- <form action="showData.html" class="form-inline">
+                                <button class="btn btn-warning mx-2"> <img src="currentLocation.png" alt="current" class="rounded" id="location1"></button>
+                            </form>
+                     -->
+                    <li class="navbar-item p-3 mx-5">
+                           <a href="#"> <img src="currentLocation.png" alt="current" class="rounded location1"></a>
+                    </li>
+                    <li class="navbar-item p-3">
+                        <a href="home.html" class=" nav-link bg-success active text-white rounded">Home</a>
+                    </li>
+                   
+                    <li class="navbar-item p-3">
+                        <a href="#" class=" nav-link bg-success text-white rounded">Hourly</a>
+                    </li>
+                    <li class="navbar-item p-3">
+                        <a href="#" class=" nav-link bg-success text-white rounded">Daily</a>
+                    </li>
+                    <li class="navbar-item p-3">
+                            <a href="#" class=" nav-link bg-success text-white rounded">Weather</a>
+                        </li>
+                    <form action="showData.html" class="form-inline">
+                        <input type="text" id="search" class="form-control">
+                        <!-- <input type="submit" value="search" id="search" class="btn btn-warning"> -->
+                        <button class="btn btn-warning mx-2">Search</button>
+                    </form>
+                </ul>
+            </div>
+            <img src="menu.png" alt="menu" class='menu rounded' onclick="showhidemenu()">
+        </nav>
+        <div class="center_image">
+        <img src="weatherReport.png" alt="report" class="rounded mx-auto d-block img-thumbnail my-5">
+    </div>
+    </div>                                                                                                             
+
+    
+    <!-- Footer -->
+<footer class="page-footer font-small blue pt-4 text-white " style=" position: fixed; bottom: 0 ; width:100%">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="background-color:#1287A5">© 2020 Copyright:
+          <a href="https://cybage.com/" class="text-white"> www.cybage.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+    
+</body>
+
+</html>
